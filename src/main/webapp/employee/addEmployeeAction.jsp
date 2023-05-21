@@ -3,6 +3,9 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.net.*" %>
 <%
+	// 한글 깨지지 않게 인코딩
+	request.setCharacterEncoding("utf-8");
+
 	// 1. 유효성 검사
 	// 1-1) 세션값
 	// 로그아웃 상태면 이 페이지에 올 수 없다

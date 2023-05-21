@@ -3,6 +3,9 @@
 <%@ page import = "java.net.*" %>
 <%@ page import = "vo.*" %>
 <%
+	// 한글 깨지지 않게 인코딩
+	request.setCharacterEncoding("utf-8");
+
 	// 1. 유효성 검사
 	// 1-1) 세션값
 	// 로그인 되어 있는 상태면 이 페이지에 올 수 없다

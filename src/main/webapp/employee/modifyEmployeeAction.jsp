@@ -3,6 +3,9 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.net.*" %>
 <%
+	// 한글 깨지지 않게 인코딩
+	request.setCharacterEncoding("utf-8");
+
 	//1. 유효성 검사
 	// 세션정보가 없거나 employeeId 값이 없으면 이 페이지에 올 수 없다
 	if(session.getAttribute("loginEmployee") == null
